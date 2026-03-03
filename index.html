@@ -114,6 +114,7 @@
             margin-bottom: 20px;
 
         }
+
         h1 {
             color: #fffeb7;
             font-style: italic;
@@ -131,26 +132,26 @@
 
     <div id="container">
 
-        <div id="skill-page" class="content-section">
+        <div id="skill-page" class="content-section active">
             <center style="margin-top: 20px;">
                 <img style="border-radius: 18px;" width="200vw" src="Pak.jpg">
                 <h1 style="font-size: 42px;">Puwit Rangsiwong</h1>
-            
-            <div id="skill">
-                <h2>My Skills</h2>
-                <ol style="display: inline-block; text-align: left; font-size: 32px;">
-                    <li>C++</li>
-                    <li>Python</li>
-                    <li>SQL</li>
-                </ol>
-                <div>
-                    <img class="logo" src="IDE.png">
-                    <img class="logo" src="python.png">
-                    <img class="logo" src="SQL.png">
+
+                <div id="skill">
+                    <h2>My Skills</h2>
+                    <ol style="display: inline-block; text-align: left; font-size: 32px;">
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                    </ol>
+                    <div>
+                        <img class="logo" src="IDE.png">
+                        <img class="logo" src="python.png">
+                        <img class="logo" src="SQL.png">
+                    </div>
                 </div>
-            </div>
             </center>
-            
+
         </div>
 
         <div id="hobby-page" class="content-section">
@@ -158,54 +159,94 @@
                 <img style="border-radius: 18px;" width="200vw" src="Pak.jpg">
                 <h1 style="font-size: 42px;">Puwit Rangsiwong</h1>
 
-            <div id="Hobby">
-                <h2>Hobbies</h2>
-                <ul style="display: inline-block; text-align: left; font-size: 32px;">
-                    <li>3D Print</li>
-                    <li>Takro</li>
-                </ul>
-                <div>
-                    <img class="logo" src="blender.png">
-                    <img class="logo" src="takro.png">
+                <div id="Hobby">
+                    <h2>Hobbies</h2>
+                    <ul style="display: inline-block; text-align: left; font-size: 32px;">
+                        <li>3D Print</li>
+                        <li>Takro</li>
+                    </ul>
+                    <div>
+                        <img class="logo" src="blender.png">
+                        <img class="logo" src="takro.png">
+                    </div>
                 </div>
-            </div>
             </center>
 
         </div>
 
-        <div id="project-page" class="content-section active">
+        <div id="project-page1" class="content-section">
             <center style="margin-top: 20px;">
                 <img style="border-radius: 18px;" width="500vw" height="300vh" src="car.jpg">
                 <h1 style="font-size: 42px;">Project</h1>
-            
-            <div style="text-align: left;" id="Detail">
-                <h2>Detail</h2>
-                <p>
-                    รองชนะเลิศอันดับ 2 กิจกรรมค่าย CE Next Gen 2 <br>
-                    ค่ายนี้เป็นค่าย ที่ทำให้ผมชื่นชอบ วิศวะคอม ลาดกระบัง เพราะ รุ่นพี่ที่เป็นกันเองคอยตอบคำถามแม้จะจบค่ายไปแล้ว รวมถึงประสบการณ์นั่งรถไฟครั้งแรก <br>
-                    ค่ายนี้ทำให้ผมได้เรียนรู้การทำอุปกรณ์ IOT และ ได้สร้างรถบังคับ ที่สามารถควบคุมได้จากทั้ง dashboard และ remote ที่สร้างจาก ESP32
-                </p>
-            </div>
 
-            <div id="ROW_TAB">
-                <div style="text-align: left;" id="Learn">
-                    <h2>Learning</h2>
+                <div style="text-align: left;" id="Detail">
+                    <h2>Detail</h2>
                     <p>
-                        node red : ใช้สร้าง Dashboard ในการทำปุ่มควบคุม และ GUI แสดงผลข้อมูลได้ <br>
-                        mqttx : ใช้ทดลอง รับ-ส่ง payload ตาม Topic ด้วย wifi <br>
-                        ESP32 : ได้เรียนรู้การทำ Debounce switch และการใช้ Sensor ควบคู่กับ Wifi
+                        รองชนะเลิศอันดับ 2 กิจกรรมค่าย CE Next Gen 2 <br>
+                        ค่ายนี้เป็นค่าย ที่ทำให้ผมชื่นชอบ วิศวะคอม ลาดกระบัง เพราะ
+                        รุ่นพี่ที่เป็นกันเองคอยตอบคำถามแม้จะจบค่ายไปแล้ว รวมถึงประสบการณ์นั่งรถไฟครั้งแรก <br>
+                        ค่ายนี้ทำให้ผมได้เรียนรู้การทำอุปกรณ์ IOT และ ได้สร้างรถบังคับ ที่สามารถควบคุมได้จากทั้ง
+                        dashboard และ remote ที่สร้างจาก ESP32
                     </p>
                 </div>
 
-                <div style="text-align: left;" id="Role">
-                    <h2>Role</h2>
-                    <ul style="text-align: left;">
-                        <li>นำเสนอหลักการทำงาน </li>
-                        <li>เขียนโปรแกรม C++</li>
-                    </ul>
+                <div id="ROW_TAB">
+                    <div style="text-align: left;" id="Learn">
+                        <h2>Learning</h2>
+                        <p>
+                            node red : ใช้สร้าง Dashboard ในการทำปุ่มควบคุม และ GUI แสดงผลข้อมูลได้ <br>
+                            mqttx : ใช้ทดลอง รับ-ส่ง payload ตาม Topic ด้วย wifi <br>
+                            ESP32 : ได้เรียนรู้การทำ Debounce switch และการใช้ Sensor ควบคู่กับ Wifi
+                        </p>
+                    </div>
+
+                    <div style="text-align: left;" id="Role">
+                        <h2>Role</h2>
+                        <ul style="text-align: left;">
+                            <li>นำเสนอหลักการทำงาน </li>
+                            <li>เขียนโปรแกรม C++</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
             </center>
+        </div>
+
+        <div id="compet-page" class="content-section">
+            <center style="margin-top: 20px;">
+                <img style="border-radius: 18px;" width="500vw" height="300vh" src="kaipum.png">
+                <h1 style="font-size: 42px;">Competition</h1>
+
+                <div style="text-align: left;" id="Detail">
+                    <h2>Detail</h2>
+                    <p>
+                        ผมได้รับรางวัลชนะเลิศ เหรียญทอง ในหมวดการเกษตรและอุตสาหกรรมการเกษตร พร้อมเงินรางวัล 5,000 บาท จากการประดิษฐ์และพัฒนาเครื่องเลี้ยงไข่ผำด้วยระบบอัตโนมัติอัจฉริยะ <br>
+                        โดยระบบของผมสามารถแสดงข้อมูลจากแปลงปลูก เช่น อุณหภูมิน้ำ ความชื้น คุณภาพน้ำ และความเข้มแสง ผ่าน Dashboard ได้ทั้งบนคอมพิวเตอร์และโทรศัพท์มือถือ <br>
+                        อีกทั้งยังสามารถควบคุมปั๊มน้ำให้สร้างน้ำวนเพื่อเพิ่มออกซิเจนในแปลงปลูกตามเวลาที่กำหนด หรือ เติมน้ำในแปลงเมือระดับน้ำต่ำเกินไป และมีระบบกรองไข่ผำที่ตายแล้วเพื่อนำไปแปรรูปเป็นปุ๋ย
+                    </p>
+                </div>
+
+                <div id="ROW_TAB">
+                    <div style="text-align: left;" id="Learn">
+                        <h2>Learning</h2>
+                        <p>
+                            OpenCV : ใช้ฝึกโมเดลกล้องเพื่อตรวจสอบว่าไข่ผำใกล้สุกหรือยัง <br>
+                            Node-RED Mobile : ใช้แสดง Dashboard บนโทรศัพท์มือถือ และปรับแต่งด้วย CSS เพื่อเพิ่มความน่าใช้งาน <br>
+                            C++ และไฟฟ้า : ได้ออกแบบวงจรภายในตู้ควบคุม และเขียนโปรแกรมให้เซนเซอร์หลายตัวทำงานพร้อมกันโดยใช้ millis()
+                        </p>
+                    </div>
+
+                    <div style="text-align: left;" id="Role">
+                        <h2>Role</h2>
+                        <ul style="text-align: left;">
+                            <li>ออกแบบวงจรอิเล็กทรอนิกส์</li>
+                            <li>ออกแบบและพรีเซนต์หน้าตาแอปพลิเคชัน</li>
+                            <li>เขียนโปรแกรมภาษา C++ เพื่อควบคุมการทำงานของระบบ</li>
+                            <li>พัฒนา Dashboard สำหรับแสดงผลข้อมูล</li>
+                        </ul>
+                    </div>
+                </div>
+            </center>
+        </div>
 
         </div>
     </div>
@@ -213,7 +254,8 @@
     <div class="tab-bar">
         <div class="tab-item selected" onclick="switchTab('skill-page', this)">Skills</div>
         <div class="tab-item" onclick="switchTab('hobby-page', this)">Hobbies</div>
-        <div class="tab-item" onclick="switchTab('project-page', this)">project</div>
+        <div class="tab-item" onclick="switchTab('project-page1', this)">Project1</div>
+        <div class="tab-item" onclick="switchTab('compet-page', this)">Competition1</div>
     </div>
 
     <script>
