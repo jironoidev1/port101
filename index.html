@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pak - Profile</title>
+    <style>
+        body {
+            background-image: url("background.jpg");
+            color: aliceblue;
+            font-family: sans-serif;
+            margin: 0;
+            padding-bottom: 70px;
+            /* เว้นที่ไว้ให้ Tab Bar ด้านล่าง */
+        }
+
+        /* จัดการการแสดงผลของแต่ละหน้า */
+        .content-section {
+            display: none;
+            /* ซ่อนทุกหน้าไว้ก่อน */
+            text-align: center;
+            padding: 20px;
+        }
+
+        .active {
+            display: block;
+            /* แสดงเฉพาะหน้าที่มี class 'active' */
+        }
+
+        /* ตกแต่งรูป Logo */
+        .logo {
+            width: 50px;
+            margin: 10px;
+        }
+
+        /* --- Tab Bar ด้านล่าง --- */
+        .tab-bar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            background-color: #222;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-top: 1px solid #444;
+        }
+
+        .tab-item {
+            color: gray;
+            cursor: pointer;
+            font-size: 14px;
+            text-align: center;
+            flex: 1;
+            padding: 10px;
+            transition: 0.3s;
+        }
+
+        .tab-item.selected {
+            color: #ff4d4d;
+            /* สีเมื่อถูกเลือก (เข้ากับสีแดงในหน้าเดิมของคุณ) */
+            font-weight: bold;
+        }
+
+        #ROW_TAB {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        #Learn {
+            width: 60%;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding-left: 16px;
+        }
+
+        #Role {
+            width: 30%;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding-left: 16px;
+        }
+
+        #skill {
+            width: 50%;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding-left: 16px;
+            margin-bottom: 20px;
+
+        }
+
+        #Hobby {
+            width: 50%;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding-left: 16px;
+
+        }
+
+        #Detail {
+            width: 90vw;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding-left: 16px;
+            margin: 20px;
+
+        }
+        h1 {
+            color: #fffeb7;
+            font-style: italic;
+            font-family: Monospace;
+        }
+
+        h2 {
+            color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="container">
+
+        <div id="skill-page" class="content-section">
+            <center style="margin-top: 20px;">
+                <img style="border-radius: 18px;" width="200vw" src="Pak.jpg">
+                <h1 style="font-size: 42px;">Puwit Rangsiwong</h1>
+            
+            <div id="skill">
+                <h2>My Skills</h2>
+                <ol style="display: inline-block; text-align: left; font-size: 32px;">
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                </ol>
+                <div>
+                    <img class="logo" src="IDE.png">
+                    <img class="logo" src="python.png">
+                    <img class="logo" src="SQL.png">
+                </div>
+            </div>
+            </center>
+            
+        </div>
+
+        <div id="hobby-page" class="content-section">
+            <center style="margin-top: 20px;">
+                <img style="border-radius: 18px;" width="200vw" src="Pak.jpg">
+                <h1 style="font-size: 42px;">Puwit Rangsiwong</h1>
+
+            <div id="Hobby">
+                <h2>Hobbies</h2>
+                <ul style="display: inline-block; text-align: left; font-size: 32px;">
+                    <li>3D Print</li>
+                    <li>Takro</li>
+                </ul>
+                <div>
+                    <img class="logo" src="blender.png">
+                    <img class="logo" src="takro.png">
+                </div>
+            </div>
+            </center>
+
+        </div>
+
+        <div id="project-page" class="content-section active">
+            <center style="margin-top: 20px;">
+                <img style="border-radius: 18px;" width="500vw" height="300vh" src="car.jpg">
+                <h1 style="font-size: 42px;">Project</h1>
+            
+            <div style="text-align: left;" id="Detail">
+                <h2>Detail</h2>
+                <p>
+                    รองชนะเลิศอันดับ 2 กิจกรรมค่าย CE Next Gen 2 <br>
+                    ค่ายนี้เป็นค่าย ที่ทำให้ผมชื่นชอบ วิศวะคอม ลาดกระบัง เพราะ รุ่นพี่ที่เป็นกันเองคอยตอบคำถามแม้จะจบค่ายไปแล้ว รวมถึงประสบการณ์นั่งรถไฟครั้งแรก <br>
+                    ค่ายนี้ทำให้ผมได้เรียนรู้การทำอุปกรณ์ IOT และ ได้สร้างรถบังคับ ที่สามารถควบคุมได้จากทั้ง dashboard และ remote ที่สร้างจาก ESP32
+                </p>
+            </div>
+
+            <div id="ROW_TAB">
+                <div style="text-align: left;" id="Learn">
+                    <h2>Learning</h2>
+                    <p>
+                        node red : ใช้สร้าง Dashboard ในการทำปุ่มควบคุม และ GUI แสดงผลข้อมูลได้ <br>
+                        mqttx : ใช้ทดลอง รับ-ส่ง payload ตาม Topic ด้วย wifi <br>
+                        ESP32 : ได้เรียนรู้การทำ Debounce switch และการใช้ Sensor ควบคู่กับ Wifi
+                    </p>
+                </div>
+
+                <div style="text-align: left;" id="Role">
+                    <h2>Role</h2>
+                    <ul style="text-align: left;">
+                        <li>นำเสนอหลักการทำงาน </li>
+                        <li>เขียนโปรแกรม C++</li>
+                    </ul>
+                </div>
+            </div>
+            </center>
+
+        </div>
+    </div>
+
+    <div class="tab-bar">
+        <div class="tab-item selected" onclick="switchTab('skill-page', this)">Skills</div>
+        <div class="tab-item" onclick="switchTab('hobby-page', this)">Hobbies</div>
+        <div class="tab-item" onclick="switchTab('project-page', this)">project</div>
+    </div>
+
+    <script>
+        function switchTab(pageId, element) {
+            // 1. ซ่อนทุกหน้า
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => section.classList.remove('active'));
+
+            // 2. แสดงหน้าที่เลือก
+            document.getElementById(pageId).classList.add('active');
+
+            // 3. เปลี่ยนสีเมนูที่กด
+            const tabs = document.querySelectorAll('.tab-item');
+            tabs.forEach(tab => tab.classList.remove('selected'));
+            element.classList.add('selected');
+        }
+    </script>
+</body>
+
+</html>
